@@ -23,6 +23,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 /* Fim da configuração geral da página*/
 /* Configuração do cabeçalho da página*/
@@ -104,27 +105,9 @@ h2, h3 {
     background-color: #f6f2ef;
     height: auto;
 }
-.header {
-    position: relative;
-}
-.header h2 {
+#suites h2 {
     padding-left: 1em;
     padding-bottom: .6em;
-}
-.header a {
-    position: absolute;
-    top: 3%;
-    right: 5%;
-    padding: 8px;
-    background-color: #623e2a;
-    color: white;
-    font: normal 10pt Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
-    transition: all .3s ease-in-out;
-}
-#suites a:hover {
-    background-color: #623e2a6e;
-    color: black;
 }
 
 .opcoes {
@@ -133,6 +116,13 @@ h2, h3 {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+}
+.quarto {
+    margin: 10px 0;
+    position: relative;
+}
+.quarto h3 {
+    padding: .5em 0;
 }
 figure {
     width: 100%;
@@ -146,12 +136,20 @@ figure img {
 figcaption {
     font: normal 12pt var(--font-text);
 }
-
-.quarto {
-    margin: 10px 0;
+.quarto a {
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    padding: 8px;
+    background-color: #623e2a;
+    color: white;
+    font: normal 10pt Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
 }
-.quarto h3 {
-    padding: .5em 0;
+.quarto a:hover {
+    background-color: white;
+    color: black;
 }
 
 #detalhe {
