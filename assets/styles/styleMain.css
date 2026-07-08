@@ -68,6 +68,10 @@ main {
     color: #623e2a;
 }
 
+#casa, #suites, #detalhes {
+    height: 100vh;
+}
+
 section {
     padding-top: 2em;
 }
@@ -91,7 +95,7 @@ h2, h3 {
 }
 .imagem {
     width: 98%;
-    height: 250px;
+    min-height: 290px;
     margin: 15px auto;
     background: #e8e8e1 url(../images/quartzo_detalhe_cama.jpg) no-repeat center / cover; 
 }
