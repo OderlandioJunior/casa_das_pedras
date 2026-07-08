@@ -38,17 +38,13 @@ header div {
     margin: auto;
     padding-top: 15%;
     color: white;
-    text-shadow: 0px 6px 0px rgba(0, 0, 0, .6);
-} 
-header p {
-    font: normal 20pt var(--font-subtitle);
-    text-align: right;
-    font-size: 2em;
-}
-
-h1 {
+    text-shadow: 0px 0px 10px black;
     font-family: var(--font-title);
     text-align: center;
+} 
+header p {
+    text-align: right;
+    font-size: 1.5em;
 }
 
 header a {
@@ -177,6 +173,9 @@ hr {
     align-items: center;
     gap: 15px;
     padding: .5em 0;
+    animation: surgir linear both;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 .descricao h3 {
     font-size: 1.6em;
@@ -188,13 +187,13 @@ hr {
 }
 .piscina {
     background: #e8e8e1 url(../images/casa_piscina.jpg) no-repeat center / cover;
-    width: 450px;
-    height: 250px;
+    width: 550px;
+    height: 230px;
 }
 .sala {
     background: #e8e8e1 url(../images/casa_sala.jpg) no-repeat center / cover;
-    width: 450px;
-    height: 250px;
+    width: 350px;
+    height: 230px;
 }
 
 #cafe h3 {
@@ -203,7 +202,7 @@ hr {
 .cafe {
     background: #e8e8e1 url(../images/casa_cozinha.jpg) no-repeat center / cover;
     width: 550px;
-    height: 200px;
+    height: 230px;
 }
 
 #resenha {
@@ -264,3 +263,21 @@ footer a:hover {
     margin-top: .5em;
 }
 /* Fim da configuração do rodapé da página*/
+
+@keyframes surgir {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+        letter-spacing: 18px;
+    }
+    65% {
+        opacity: 0;
+        transform: translateX(200px);
+        letter-spacing: 8px;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        letter-spacing: 0;
+    }
+}
